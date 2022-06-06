@@ -30,8 +30,7 @@ local.properties
 *.iml
 *.hprof
 
-/app/debug
-.keystroke
+android/app/
 
 # node.js
 #
