@@ -92,9 +92,9 @@ class Game extends React.Component {
 
     let remainingTimeText;
     if (this.state.remainingSeconds === 1) {
-        remainingTimeText = <Text style={{ margin: 50}}>Time Remaining unil Game ends: {this.state.remainingSeconds} second</Text>
+        remainingTimeText = <Text style={styles.timeRemaining}>Time left unil Game ends: {this.state.remainingSeconds} second</Text>
     } else {
-        remainingTimeText = <Text style={{margin: 50}}>Time Remaining until Game ends: {this.state.remainingSeconds} seconds</Text>
+        remainingTimeText = <Text style={styles.timeRemaining}>Time left until Game ends: {this.state.remainingSeconds} seconds</Text>
     };
 
         const gameStatus = this.gameStatus;
@@ -146,6 +146,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'space-around',
+    },
+    timeRemaining: {
+        textAlign: 'center',
+        marginBottom: 50,
+        fontSize: 20,
     },
     random: {
         backgroundColor: '#999',
